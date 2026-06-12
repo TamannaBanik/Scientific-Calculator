@@ -1,0 +1,149 @@
+:root {
+  --bg1: #0b1220;
+  --bg2: #243b55;
+  --panel-top: #24344d;
+  --panel-bottom: #1a2435;
+  --display: #020617;
+  --number: #374151;
+  --function: #2563eb;
+  --operator: #f59e0b;
+  --danger: #e24d4d;
+  --text: #f8fafc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f9ff, #bae6fd, #7dd3fc);
+}
+#calculator {
+  width: 430px;
+  padding: 22px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, var(--panel-top), var(--panel-bottom));
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.title {
+  text-align: center;
+  color: #94a3b8;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+
+.status {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+#modeIndicator {
+  color: #22c55e;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.7);
+}
+
+#display {
+  width: 100%;
+  height: 95px;
+  outline: none;
+  border-radius: 18px;
+  background: var(--display);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-family: 'Digital-7', monospace;
+  color: #22c55e;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: right;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  height: 62px;
+  border: none;
+  border-radius: 16px;
+  background: var(--number);
+  color: var(--text);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 4px 12px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background-color: #4b5563;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+  transform: scale(0.92);
+  filter: brightness(0.85);
+}
+
+button:focus {
+  outline: none;
+}
+.no {
+  font-size: 2rem;
+}
+
+.func {
+  background: var(--function);
+}
+
+.func:hover {
+  background: #3b82f6;
+}
+
+.op {
+  background: var(--operator);
+  font-size: 2rem;
+}
+
+.op:hover {
+  background: #fbbf24;
+}
+
+.danger {
+  background: var(--danger);
+}
+
+.danger:hover {
+  background: #ed3939;
+}
+
+#mode {
+  background: #7c3aed;
+}
+
+#mode:hover {
+  background: #8b5cf6;
+}
