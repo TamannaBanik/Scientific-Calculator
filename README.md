@@ -49,4 +49,4 @@ Some features I may add in the future:
 
 ## Demo
 
-https://github.com/TamannaBanik/Scientific-Calculator/raw/refs/heads/main/images/demo.mp4
+https://githubusercontent.com/TamannaBanik/Scientific-Calculator/raw/refs/heads/main/images/demo.mp4
