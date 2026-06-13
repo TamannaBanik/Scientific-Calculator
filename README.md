@@ -40,3 +40,13 @@ Some features I may add in the future:
 - Implicit multiplication (2π, 2(3+4))
 - Additional scientific functions
 
+## Overview
+
+<p align="center">
+  <img src="images/calculator.png" width="700">
+</p>
+
+
+## Demo
+
+https://github.com/TamannaBanik/Scientific-Calculator/raw/refs/heads/main/images/demo.mp4
